@@ -1,54 +1,104 @@
-# React + TypeScript + Vite
+# Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern personal portfolio web application built with **React**, **TypeScript**, **Vite**, and **Tailwind CSS**.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚡️ Fast development with [Vite](https://vitejs.dev/)
+- 🎨 Styled using [Tailwind CSS](https://tailwindcss.com/) and custom themes
+- 🧩 Modular, reusable React components
+- 🌙 Dark mode support
+- 🛠️ Type-safe with TypeScript
+- 🧹 Linting with ESLint and recommended configs
+- 📦 Easy component and utility aliasing
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Prerequisites
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- [Node.js](https://nodejs.org/) (v18+ recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Installation
+
+```sh
+git clone https://github.com/your-username/personal-portfolio.git
+cd personal-portfolio
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Development
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Start the development server:
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```sh
+npm run dev
 ```
+
+Open [http://localhost:5173](http://localhost:5173) to view the app.
+
+### Build
+
+To build for production:
+
+```sh
+npm run build
+```
+
+### Preview
+
+To preview the production build:
+
+```sh
+npm run preview
+```
+
+### Lint
+
+To check for lint errors:
+
+```sh
+npm run lint
+```
+
+## Project Structure
+
+```
+├── public/               # Static assets
+├── src/
+│   ├── assets/           # Images and icons
+│   ├── components/       # Reusable UI components
+│   │   └── ui/           # Atomic UI components (Button, Logo, etc.)
+│   ├── lib/              # Utilities (e.g., className helpers)
+│   ├── pages/            # Route components (e.g., Home)
+│   ├── App.tsx           # Main app layout
+│   ├── main.tsx          # Entry point
+│   └── index.css         # Global styles and Tailwind config
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
+```
+
+## Aliases
+
+You can use the following import aliases:
+
+- `@/components` → `src/components`
+- `@/components/ui` → `src/components/ui`
+- `@/lib` → `src/lib`
+- `@/lib/utils` → `src/lib/utils`
+
+## Customization
+
+- **Theme:** Edit `src/index.css` for color and font customization.
+- **Components:** Add or modify components in `src/components/` and `src/components/ui/`.
+- **Pages:** Add new pages in `src/pages/` and update routing in `src/main.tsx`.
+
+## License
+
+[MIT](LICENSE)
+
+---
+
+Built with ❤️ using React, TypeScript, and Tailwind
