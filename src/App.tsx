@@ -1,14 +1,12 @@
-// import Header from "./components/header";
-// import { Outlet } from "react-router";
-import Home from "./pages/home";
+import Header from "./components/header";
+import { Outlet } from "react-router";
 
 function App() {
   return (
     <div className="dark bg-background text-foreground font-nunito">
-      {/* <Header /> */}
+      <Header />
       <main className="min-h-screen">
-        <Home />
-        {/* <Outlet /> */}
+        <Outlet />
       </main>
     </div>
   );
