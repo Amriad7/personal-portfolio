@@ -1,5 +1,5 @@
-import Header from "./components/header";
-import { Outlet } from "react-router";
+// import Header from "./components/header";
+// import { Outlet } from "react-router";
 import Home from "./pages/home";
 
 function App() {
