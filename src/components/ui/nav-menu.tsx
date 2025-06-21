@@ -11,7 +11,7 @@ const NavMenu = () => {
   ];
 
   return (
-    <nav>
+    <nav className="hidden md:inline">
       <ul className="flex gap-5 text-lg font-light text-gray-400">
         {items.map(({ name, path }) => (
           <li key={name}>

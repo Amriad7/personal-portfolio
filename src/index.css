@@ -101,7 +101,7 @@
 }
 
 .separator-gradient {
-  background: radial-gradient(ellipse at center, #4b5563 0%, transparent 66%);
+  background: radial-gradient(ellipse at center, #4b556380 0%, transparent 66%);
 }
 
 .dark {

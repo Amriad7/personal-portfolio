@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="dark relative bg-background text-foreground font-nunito flex flex-col justify-between min-h-screen">
       <Header />
-      <main className="">
+      <main>
         <Outlet />
       </main>
       <Footer />
