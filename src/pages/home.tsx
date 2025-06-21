@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="px-6 py-[80px] h-screen max-h-[540px] flex items-center justify-center hero-gradient">
+      <section className="px-6 border py-[80px] h-screen max-h-[480px] flex items-center justify-center hero-gradient">
         <div className="m-auto space-y-10 max-w-[640px] text-indigo-50">
           <Heading
             title={
