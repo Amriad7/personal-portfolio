@@ -1,8 +1,10 @@
-
 # 📝 TODO List
 
-- [ ] Fix react router
-- [ ] Design the mobile version
-- [ ] Make the website responsive
+- [x] Switch to hash router
+- [x] Design the mobile version
+- [ ] Add the logo component
+- [ ] Add the Heading Component
+- [ ] Add footer component
+- [ ] Make Homepage mobile first
 - [ ] Design about page
 - [ ] Code about page
