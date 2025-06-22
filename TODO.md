@@ -8,6 +8,11 @@
 - [x] Add footer component
 - [x] Make Homepage mobile first
 - [x] Make active page in navmenu
-- [ ] Add pfp component
-- [ ] Add the about page
-- [ ] Mobile /home is Kinda ugly
+- [x] Add pfp component
+- [x] Add the about page
+- [ ] Add the service component
+- [ ] Add the services page
+- [ ] make services responsive
+- [ ] Fix the menu button
+- [ ] Fix the mobile side menu!
+- [ ] Adjust the pages margins
