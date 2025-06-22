@@ -1,12 +1,19 @@
 import { Button } from "./ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "./ui/sheet";
 
 const SideMenu = () => {
   return (
     <div>
       <Sheet>
-        <SheetTrigger>
-          <Button variant={"secondary"} size={"icon"}>
+        <Button variant={"secondary"} size={"icon"} asChild>
+          <SheetTrigger>
             <svg
               className="w-6 h-6 text-gray-800 dark:text-gray-50"
               aria-hidden="true"
@@ -23,9 +30,14 @@ const SideMenu = () => {
                 d="M5 7h14M5 12h14M5 17h14"
               />
             </svg>
-          </Button>
-        </SheetTrigger>
-        <SheetContent></SheetContent>
+          </SheetTrigger>
+        </Button>
+        <SheetContent>
+          <SheetHeader>
+            <SheetTitle>Menu</SheetTitle>
+            <SheetDescription>Navigation Menu</SheetDescription>
+          </SheetHeader>
+        </SheetContent>
       </Sheet>
     </div>
   );

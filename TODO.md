@@ -7,5 +7,7 @@
 - [x] Add the Heading Component
 - [x] Add footer component
 - [x] Make Homepage mobile first
-- [ ] Make active page in navmenu
+- [x] Make active page in navmenu
+- [ ] Add pfp component
 - [ ] Add the about page
+- [ ] Mobile /home is Kinda ugly
