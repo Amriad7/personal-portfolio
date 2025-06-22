@@ -1,4 +1,5 @@
-import { Link } from "react-router";
+import { cn } from "@/lib/utils";
+import { NavLink } from "react-router";
 
 const NavMenu = () => {
   const items = [
@@ -15,9 +16,14 @@ const NavMenu = () => {
       <ul className="flex gap-5 text-lg font-light text-gray-400">
         {items.map(({ name, path }) => (
           <li key={name}>
-            <Link to={path} className="p-3 inline-block">
+            <NavLink
+              to={path}
+              className={({ isActive }) =>
+                cn("p-3 inline-block", isActive && "font-semibold text-gray-50")
+              }
+            >
               {name}
-            </Link>
+            </NavLink>
           </li>
         ))}
       </ul>

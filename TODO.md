@@ -3,9 +3,9 @@
 - [x] Switch to hash router
 - [x] Design the mobile version
 - [x] Better SEO index page
-- [ ] Add the logo component
-- [ ] Add the Heading Component
-- [ ] Add footer component
-- [ ] Make Homepage mobile first
-- [ ] Design about page
-- [ ] Code about page
+- [x] Add the logo component
+- [x] Add the Heading Component
+- [x] Add footer component
+- [x] Make Homepage mobile first
+- [ ] Make active page in navmenu
+- [ ] Add the about page
