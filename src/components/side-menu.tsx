@@ -4,7 +4,6 @@ import Fancy from "./ui/fancy";
 import Logo from "./ui/logo";
 import {
   Sheet,
-  SheetClose,
   SheetContent,
   SheetDescription,
   SheetHeader,

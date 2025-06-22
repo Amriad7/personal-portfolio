@@ -13,6 +13,6 @@
 - [ ] Add the service component
 - [ ] Add the services page
 - [ ] make services responsive
-- [ ] Fix the menu button
-- [ ] Fix the mobile side menu!
+- [x] Fix the menu button
+- [x] Fix the mobile side menu!
 - [ ] Adjust the pages margins
