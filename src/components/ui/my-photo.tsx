@@ -6,7 +6,7 @@ const MyPhoto = () => {
       <img
         src={pfp}
         alt="Amriad's profile picture"
-        className="m-auto size-[180px] rounded-xl"
+        className="m-auto size-[180px] sm:size-[320px] sm:mt-[80px] lg:mt-0 rounded-xl"
       />
     </div>
   );

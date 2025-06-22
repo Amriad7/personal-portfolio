@@ -9,14 +9,9 @@ const Home = () => {
       {/* Hero Section */}
       <section className="px-6 sm:px-10 pt-[60px] h-screen max-h-[480px] sm:min-h-[580px] flex items-center justify-center hero-gradient">
         <div className="m-auto space-y-10 max-w-[640px] text-indigo-50">
-          <Heading
-            title={
-              <>
-                Hi, I'm <Fancy>{"<Amriad/>"}</Fancy>
-              </>
-            }
-            subtitle="A Fullstack Developer"
-          />
+          <Heading description="A Fullstack Developer">
+            Hi, I'm <Fancy>{"<Amriad/>"}</Fancy>
+          </Heading>
           <P className="italic text-center">
             with the passion for building modern web applications that are
             functional, performant and elegant. Always excited to take new
