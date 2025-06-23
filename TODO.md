@@ -10,9 +10,9 @@
 - [x] Make active page in navmenu
 - [x] Add pfp component
 - [x] Add the about page
-- [ ] Add the service component
-- [ ] Add the services page
-- [ ] make services responsive
+- [x] Add the service component
+- [x] Add the services page
+- [x] make services responsive
 - [x] Fix the menu button
 - [x] Fix the mobile side menu!
 - [ ] Adjust the pages margins

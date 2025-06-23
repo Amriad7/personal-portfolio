@@ -10,7 +10,7 @@ const NavMenu = ({ orientation, ...props }: NavMenuProps) => {
   const items = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
-    { name: "Resume", path: "/resume" },
+    { name: "Services", path: "/services" },
     { name: "Projects", path: "/projects" },
     { name: "Blog", path: "/blog" },
     { name: "Contacts", path: "/contacts" },
