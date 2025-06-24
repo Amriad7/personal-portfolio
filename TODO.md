@@ -15,4 +15,9 @@
 - [x] make services responsive
 - [x] Fix the menu button
 - [x] Fix the mobile side menu!
+- [ ] Add projects page
+- [ ] Add projects card comp
+- [ ] Add List comp styling
+- [ ] Add pill comp
+- [ ] Make comp responsive
 - [ ] Adjust the pages margins
