@@ -6,6 +6,7 @@ import Home from "./pages/home.tsx";
 import About from "./pages/about.tsx";
 import Services from "./pages/services.tsx";
 import Contacts from "./pages/contacts.tsx";
+import Projects from "./pages/projects.tsx";
 import "./index.css";
 
 const router = createHashRouter([
@@ -17,6 +18,7 @@ const router = createHashRouter([
       { path: "about", Component: About },
       { path: "services", Component: Services },
       { path: "contacts", Component: Contacts },
+      { path: "projects", Component: Projects },
     ],
   },
 ]);
