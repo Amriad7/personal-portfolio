@@ -10,8 +10,8 @@ const Contacts = () => {
     <div className="relative">
       <div className="hero-gradient absolute top-0 left-0 w-full h-screen z-0"></div>
       <section className=" py-[100px] sm:py-[150px] m-auto max-w-[640px] px-6 relative z-10 space-y-12 sm:space-y-24">
-        <div className="space-y-8 sm:space-y-10">
-          <Heading description={"Let's build something awsome"}>
+        <div className="space-y-6 sm:space-y-8">
+          <Heading description={"Let's build something awesome"}>
             Get in <Fancy>Touch</Fancy>
           </Heading>
           <P className="text-center">

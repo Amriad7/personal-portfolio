@@ -50,7 +50,7 @@ const ProjectCard = ({
               <h3 className="text-base sm:text-2xl text-gray-200/80 font-normal mb-2 sm:mb-4">
                 Tech Stack
               </h3>
-              <div className="space-x-1 space-y-2">
+              <div className="space-x-2 space-y-2 ">
                 {stack.map((tech) => (
                   <Badge key={tech}>{tech}</Badge>
                 ))}

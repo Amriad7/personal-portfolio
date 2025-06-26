@@ -35,7 +35,7 @@ const Services = () => {
     <div className="relative">
       <div className="hero-gradient absolute top-0 left-0 w-full h-screen z-0"></div>
       <section className="py-[100px] sm:py-[150px] px-6">
-        <div className="space-y-16 sm:space-y-24">
+        <div className="space-y-14 sm:space-y-24">
           <Heading description="My top quality services">
             What I <Fancy>Offer</Fancy>
           </Heading>
