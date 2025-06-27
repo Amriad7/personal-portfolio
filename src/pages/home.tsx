@@ -1,7 +1,10 @@
+import CTAButton from "@/components/cta-button";
 import { Button } from "@/components/ui/button";
 import Fancy from "@/components/ui/fancy";
 import Heading from "@/components/ui/heading";
 import P from "@/components/ui/paragraph";
+import { MoveRight } from "lucide-react";
+import { Link } from "react-router";
 
 const Home = () => {
   return (
@@ -19,16 +22,21 @@ const Home = () => {
           </P>
           {
             <div className="text-center space-x-4 space-y-4">
-              <Button className="w-[125px] sm:w-[180px]" size="lg">
-                Hire Me
-              </Button>
-              <Button
-                className="w-[125px] sm:w-[180px]"
-                variant="secondary"
-                size="lg"
-              >
-                View Projects
-              </Button>
+              <Link to="/contacts">
+                <CTAButton className="w-[125px] sm:w-[180px]" size="lg">
+                  Hire Me
+                </CTAButton>
+              </Link>
+              <Link to="/projects">
+                <Button
+                  className="w-[125px] sm:w-[180px] group"
+                  variant="secondary"
+                  size="lg"
+                >
+                  View Projects
+                  <MoveRight className="text-primary size-0 opacity-0 transition-all group-hocus:size-4 sm:group-hocus:size-5 group-hocus:opacity-100" />
+                </Button>
+              </Link>
             </div>
           }
         </div>

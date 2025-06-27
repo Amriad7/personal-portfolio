@@ -1,3 +1,4 @@
+import CTAButton from "@/components/cta-button";
 import { Button } from "@/components/ui/button";
 import Fancy from "@/components/ui/fancy";
 import Heading from "@/components/ui/heading";
@@ -27,9 +28,9 @@ const About = () => {
               constantly learnning and improving my skills in the field.
             </P>
             <div className="flex items-center justify-center lg:justify-start gap-4 sm:gap-8">
-              <Button className="w-[125px] sm:w-[200px]" size="lg">
+              <CTAButton className="w-[125px] sm:w-[200px]" size="lg">
                 Download CV
-              </Button>
+              </CTAButton>
               <div className="inline space-x-2 sm:space-x-4">
                 <Button className="" variant="secondary" size="icon">
                   <svg

@@ -18,7 +18,8 @@
 - [x] Add projects page
 - [x] Add projects card comp
 - [x] Add List comp styling
-- [ ] style pill comp
+- [x] style pill comp
 - [x] Make comp responsive
 - [ ] SideMenu close on page change
-- [ ] Adjust the pages margins
+- [x] Adjust the pages margins
+- [ ] Inteactivity!

@@ -5,6 +5,7 @@
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
+@custom-variant hocus (&:hover, &:focus);
 
 @theme {
   --font-nunito: "Nunito", "sans-serif";
