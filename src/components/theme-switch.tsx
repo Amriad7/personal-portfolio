@@ -1,4 +1,4 @@
-import { Croissant, Moon, Sun, SunDim } from "lucide-react";
+import { Moon, Sun } from "lucide-react";
 import { Button } from "./ui/button";
 import { useState } from "react";
 
