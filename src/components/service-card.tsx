@@ -18,8 +18,8 @@ interface ServiceCardProp extends HTMLAttributes<HTMLDivElement> {
 
 const ServiceCard = ({ icon, title, description }: ServiceCardProp) => {
   return (
-    <div className="bg-gradient-to-b from-gray-600/50 to-75% to-transparent rounded-3xl p-[1px] mt-6 max-w-[360px] sm:max-w-[480px]">
-      <Card className="relative pt-10 sm:pt-14 sm:px-6 gap-4 sm:gap-6 border-none">
+    <div className="bg-gradient-to-b from-gray-600/50 to-75% to-transparent rounded-3xl p-[1px] mt-6 max-w-[360px] sm:max-w-[480px] hocus:-translate-y-4 transition-transform ease-in">
+      <Card className="relative pt-10 sm:pt-14 sm:px-6 gap-4 sm:gap-6 border-none hocus:bg-gradient-to-b from-gray-900 to-card to-80%">
         <CardIcon icon={icon} />
         <CardHeader>
           <CardTitle className="whitespace-pre-line text-xl sm:text-3xl font-source-code font-bold uppercase text-center">
