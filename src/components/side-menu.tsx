@@ -21,7 +21,7 @@ const SideMenu = () => {
         <Button
           ref={closeRef}
           variant={"secondary"}
-          className="px-0 sm:py-5"
+          className="w-9 sm:py-5 sm:w-10"
           asChild
         >
           <SheetTrigger>
