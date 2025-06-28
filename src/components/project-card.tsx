@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 import {
@@ -8,6 +9,7 @@ import {
   CardTitle,
 } from "./ui/card";
 import P from "./ui/paragraph";
+import { Github, MoveRight } from "lucide-react";
 
 interface ProjectCardProps {
   title: string;
@@ -58,8 +60,21 @@ const ProjectCard = ({
             </div>
           </CardContent>
           <CardFooter className=" py-4 px-4 space-x-4">
-            <Button>Live Demo</Button>
-            <Button variant="secondary">Project Page</Button>
+            <Link to="https://amriad7.github.io/personal-portfolio/">
+              <Button className="group w-[110px] sm:w-[150px]">
+                Live Demo
+                <MoveRight className="text-foreground size-0 opacity-0 transition-all group-hocus:size-4 sm:group-hocus:size-5 group-hocus:opacity-100" />
+              </Button>
+            </Link>
+            <Link to="https://github.com/Amriad7/personal-portfolio">
+              <Button
+                variant="secondary"
+                className="group text-foreground/80 hocus:text-foreground"
+              >
+                <Github className="size-3 sm:size-5 stroke-0 fill-foreground/80 group-hocus:fill-foreground" />
+                Project Code
+              </Button>
+            </Link>
           </CardFooter>
         </div>
       </Card>
