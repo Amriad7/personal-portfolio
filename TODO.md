@@ -20,12 +20,11 @@
 - [x] Add List comp styling
 - [x] style pill comp
 - [x] Make comp responsive
-- [ ] SideMenu close on page change
+- [x] SideMenu close on page change
 - [x] Adjust the pages margins
-- [ ] Inteactivity!
-- [ ] Animate projects
-- [ ] animate Contacts
-- [ ] animate nav menu
+- [x] Animate projects
+- [x] animate Contacts
+- [x] animate nav menu
 - [ ] dark/light switch
 - [ ] fix menu open & close buttons
 - [ ] Make logo link to home

@@ -4,9 +4,10 @@ import { NavLink } from "react-router";
 
 interface NavMenuProps extends HTMLAttributes<HTMLDivElement> {
   orientation?: "horizontal" | "vertical";
+  onItemClick?: () => void;
 }
 
-const NavMenu = ({ orientation, ...props }: NavMenuProps) => {
+const NavMenu = ({ orientation, onItemClick, ...props }: NavMenuProps) => {
   const items = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
@@ -28,8 +29,12 @@ const NavMenu = ({ orientation, ...props }: NavMenuProps) => {
           <li key={name}>
             <NavLink
               to={path}
+              onClick={onItemClick}
               className={({ isActive }) =>
-                cn("p-3 inline-block", isActive && "font-semibold text-gray-50")
+                cn(
+                  "p-3 inline-block hocus:text-gray-200",
+                  isActive && "font-semibold text-gray-50"
+                )
               }
             >
               {name}

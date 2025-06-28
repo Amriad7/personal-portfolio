@@ -11,12 +11,19 @@ import {
   SheetTrigger,
 } from "./ui/sheet";
 import NavMenu from "./ui/nav-menu";
+import { useRef } from "react";
 
 const SideMenu = () => {
+  const closeRef = useRef<HTMLButtonElement>(null);
   return (
     <div>
       <Sheet>
-        <Button variant={"secondary"} className="size-9 sm:size-10" asChild>
+        <Button
+          ref={closeRef}
+          variant={"secondary"}
+          className="px-0 sm:py-5"
+          asChild
+        >
           <SheetTrigger>
             <svg
               className="w-6 h-6 text-gray-800 dark:text-gray-50"
@@ -47,7 +54,10 @@ const SideMenu = () => {
             </SheetDescription>
           </SheetHeader>
           <Separator />
-          <NavMenu orientation="vertical" />
+          <NavMenu
+            orientation="vertical"
+            onItemClick={() => closeRef.current?.click()}
+          />
         </SheetContent>
       </Sheet>
     </div>

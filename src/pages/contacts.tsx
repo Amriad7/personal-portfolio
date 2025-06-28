@@ -6,6 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import SocialButtons from "@/components/social-buttons";
 import { Send } from "lucide-react";
+import CTAButton from "@/components/cta-button";
 
 const Contacts = () => {
   return (
@@ -30,9 +31,9 @@ const Contacts = () => {
           <Input type="email" placeholder="Email" />
           <Textarea placeholder="Message" className="h-[240px]" />
           <div className="flex items-center justify-center mt-8  gap-4 sm:gap-8">
-            <Button className="w-[125px] sm:w-[200px]" size="lg">
+            <CTAButton className="w-[125px] sm:w-[200px]" size="lg">
               Send
-            </Button>
+            </CTAButton>
             <span>Or</span>
             <SocialButtons />
           </div>
