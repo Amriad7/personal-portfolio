@@ -27,6 +27,6 @@
 - [x] animate nav menu
 - [ ] dark/light switch
 - [x] fix menu open & close buttons
-- [ ] Make logo link to home
+- [x] Make logo link to home
 - [ ] Home page typing animation
 - [ ]
