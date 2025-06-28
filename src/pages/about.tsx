@@ -1,35 +1,9 @@
 import CTAButton from "@/components/cta-button";
-import { Button } from "@/components/ui/button";
+import SocialButtons from "@/components/social-buttons";
 import Fancy from "@/components/ui/fancy";
 import Heading from "@/components/ui/heading";
 import MyPhoto from "@/components/ui/my-photo";
 import P from "@/components/ui/paragraph";
-import { Link } from "react-router";
-import { Facebook, Github, Linkedin } from "lucide-react";
-
-const socialLinks = [
-  {
-    platform: "github",
-    link: "https://github.com/Amriad7",
-    icon: (
-      <Github className="size-5 stroke-0 fill-foreground/80 group-hocus:fill-foreground" />
-    ),
-  },
-  {
-    platform: "facebook",
-    link: "#",
-    icon: (
-      <Facebook className="size-5 stroke-0 fill-foreground/80 group-hocus:fill-foreground" />
-    ),
-  },
-  {
-    platform: "linked-in",
-    link: "#",
-    icon: (
-      <Linkedin className="size-5 stroke-0 fill-foreground/80 group-hocus:fill-foreground" />
-    ),
-  },
-];
 
 const About = () => {
   return (
@@ -56,19 +30,7 @@ const About = () => {
               <CTAButton className="w-[125px] sm:w-[200px]" size="lg">
                 Download CV
               </CTAButton>
-              <div className="inline space-x-2 sm:space-x-4">
-                {socialLinks.map(({ link, icon }) => (
-                  <Link to={link}>
-                    <Button
-                      className="group hocus:scale-110 transition-transform"
-                      variant="secondary"
-                      size="icon"
-                    >
-                      {icon}
-                    </Button>
-                  </Link>
-                ))}
-              </div>
+              <SocialButtons />
             </div>
           </div>
         </div>

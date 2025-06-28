@@ -23,3 +23,10 @@
 - [ ] SideMenu close on page change
 - [x] Adjust the pages margins
 - [ ] Inteactivity!
+- [ ] Animate projects
+- [ ] animate Contacts
+- [ ] animate nav menu
+- [ ] dark/light switch
+- [ ] fix menu open & close buttons
+- [ ] Make logo link to home
+- [ ] Home page typing animation
