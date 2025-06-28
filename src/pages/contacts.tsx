@@ -3,9 +3,7 @@ import Heading from "@/components/ui/heading";
 import { Input } from "@/components/ui/input";
 import P from "@/components/ui/paragraph";
 import { Textarea } from "@/components/ui/textarea";
-import { Button } from "@/components/ui/button";
 import SocialButtons from "@/components/social-buttons";
-import { Send } from "lucide-react";
 import CTAButton from "@/components/cta-button";
 
 const Contacts = () => {
