@@ -9,7 +9,7 @@ const P = ({ className, children, ...rest }: PProps) => {
   return (
     <p
       className={cn(
-        "text-sm sm:text-lg text-gray-400/80 font-light leading-8 tracking-normal ",
+        "text-sm sm:text-lg dark:text-gray-400/80 dark:font-light font-normal text-foreground/60 leading-8 tracking-normal ",
         className
       )}
       {...rest}

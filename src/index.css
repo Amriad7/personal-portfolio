@@ -53,12 +53,12 @@
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  --foreground: var(--color-indigo-950);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(25.647% 0.08012 24.779);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
+  --primary: oklch(58.8% 0.158 241.966);
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
@@ -93,8 +93,12 @@
   box-shadow: inset 0px 2px 8px 0px #b8e6fec0;
 }
 
-.border-gradient {
+.dark .border-gradient {
   box-shadow: inset 0px 1.5px 0px 0px #4a5565;
+}
+
+.border-gradient {
+  box-shadow: inset 0px -1px 0px 0px #4a556540;
 }
 
 .hero-gradient {

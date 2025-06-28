@@ -16,14 +16,14 @@ const Heading: React.FC<HeadingProps> = ({
   return (
     <header
       className={cn(
-        "font-source-code text-2xl sm:text-5xl font-bold text-center space-y-2 sm:space-y-6",
+        "font-source-code text-2xl sm:text-5xl font-bold text-foreground text-center space-y-2 sm:space-y-6",
         className
       )}
       {...props}
     >
       <h1>{children}</h1>
       {description && (
-        <p className="text-base sm:text-2xl text-gray-200/80 font-normal">
+        <p className="text-base sm:text-2xl text-foreground/75 font-normal">
           {description}
         </p>
       )}

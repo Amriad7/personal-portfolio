@@ -1,6 +1,7 @@
 import SideMenu from "./side-menu";
 import NavMenu from "./ui/nav-menu";
 import Logo from "./ui/logo";
+import ThemeSwitch from "./theme-switch";
 
 const Header = () => {
   return (
@@ -10,6 +11,7 @@ const Header = () => {
     >
       <Logo />
       <NavMenu className="hidden md:inline" />
+      <ThemeSwitch />
       <SideMenu />
     </header>
   );

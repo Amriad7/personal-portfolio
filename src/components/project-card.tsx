@@ -32,24 +32,24 @@ const ProjectCard = ({
         </div>
         <div className="space-y-4 sm:space-y-6 lg:w-1/2 ">
           <CardHeader className="px-4">
-            <CardTitle className="text-xl sm:text-3xl font-source-code font-bold uppercase ">
+            <CardTitle className="text-xl text-foreground sm:text-3xl font-source-code font-bold uppercase ">
               {title}
             </CardTitle>
           </CardHeader>
           <CardContent className="space-y-4 sm:space-y-8 px-4 mb-8">
             <P>{description}</P>
             <div>
-              <h3 className="text-base sm:text-2xl text-gray-200/80 font-normal mb-2 sm:mb-4">
+              <h3 className="text-base sm:text-2xl dark:text-gray-200/80 text-foreground font-normal mb-2 sm:mb-4">
                 Key Features
               </h3>
-              <ul className="list-inside list-disc text-sm sm:text-lg text-gray-400/80 font-light leading-8 tracking-normal">
+              <ul className="list-inside list-disc text-sm sm:text-lg dark:text-gray-400/80 text-foreground/80 font-light leading-8 tracking-normal">
                 {features.map((feature) => (
                   <li key={feature}>{feature}</li>
                 ))}
               </ul>
             </div>
             <div>
-              <h3 className="text-base sm:text-2xl text-gray-200/80 font-normal mb-2 sm:mb-4">
+              <h3 className="text-base sm:text-2xl dark:text-gray-200/80 text-foreground font-normal mb-2 sm:mb-4">
                 Tech Stack
               </h3>
               <div className="space-x-2 space-y-2 ">
@@ -63,7 +63,7 @@ const ProjectCard = ({
             <Link to="https://amriad7.github.io/personal-portfolio/">
               <Button className="group w-[110px] sm:w-[150px]">
                 Live Demo
-                <MoveRight className="text-foreground size-0 opacity-0 transition-all group-hocus:size-4 sm:group-hocus:size-5 group-hocus:opacity-100" />
+                <MoveRight className="text-white size-0 opacity-0 transition-all group-hocus:size-4 sm:group-hocus:size-5 group-hocus:opacity-100" />
               </Button>
             </Link>
             <Link to="https://github.com/Amriad7/personal-portfolio">

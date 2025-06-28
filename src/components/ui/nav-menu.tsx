@@ -21,7 +21,7 @@ const NavMenu = ({ orientation, onItemClick, ...props }: NavMenuProps) => {
     <nav {...props}>
       <ul
         className={cn(
-          "flex items-center gap-5 text-lg font-light text-gray-400",
+          "flex items-center gap-5 text-lg font-light dark:text-gray-400 text-foreground/65",
           orientation === "vertical" && "flex-col gap-0 py-6"
         )}
       >
@@ -32,8 +32,8 @@ const NavMenu = ({ orientation, onItemClick, ...props }: NavMenuProps) => {
               onClick={onItemClick}
               className={({ isActive }) =>
                 cn(
-                  "p-3 inline-block hocus:text-gray-200",
-                  isActive && "font-semibold text-gray-50"
+                  "p-3 inline-block dark:hocus:text-gray-200 hocus:text-foreground",
+                  isActive && "font-semibold dark:text-gray-50 text-foreground"
                 )
               }
             >
