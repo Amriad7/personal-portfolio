@@ -25,8 +25,10 @@
 - [x] Animate projects
 - [x] animate Contacts
 - [x] animate nav menu
-- [ ] dark/light switch
+- [x] dark/light switch
+- [ ] imporve light mode colors
+- [ ] theme local storage
+- [x] theme switch position
 - [x] fix menu open & close buttons
 - [x] Make logo link to home
-- [ ] Home page typing animation
 - [ ]
