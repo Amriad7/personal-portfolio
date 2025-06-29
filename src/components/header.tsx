@@ -10,9 +10,11 @@ const Header = () => {
       className="bg-transparent z-50 flex items-center justify-between px-6 lg:px-24 lg:border-none h-[60px] sm:h-[80px] w-full fixed border-b border-gray-600/50"
     >
       <Logo />
-      <NavMenu className="hidden md:inline" />
-      <ThemeSwitch />
-      <SideMenu />
+      <NavMenu className="hidden md:inline border" />
+      <div className="flex items-center gap-2 sm:gap-4">
+        <ThemeSwitch />
+        <SideMenu />
+      </div>
     </header>
   );
 };
