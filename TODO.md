@@ -31,4 +31,12 @@
 - [x] theme switch position
 - [x] fix menu open & close buttons
 - [x] Make logo link to home
+- [ ] Add working form with validation
+- [ ] Add 404 Page!
+- [ ] Scroll top on page change
+- [ ] Add the CV
+- [ ] social media accounts
+- [ ] Add google analytics
+- [ ] Add dashboard analytics page
+- [ ] Add authentication to dashboard
 - [ ]

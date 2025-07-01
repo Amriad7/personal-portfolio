@@ -7,6 +7,8 @@ import About from "./pages/about.tsx";
 import Services from "./pages/services.tsx";
 import Contacts from "./pages/contacts.tsx";
 import Projects from "./pages/projects.tsx";
+import Admin from "./pages/admin/admin.tsx";
+import Dashboard from "./pages/admin/dashboard.tsx";
 import "./index.css";
 
 const router = createHashRouter([
@@ -20,6 +22,11 @@ const router = createHashRouter([
       { path: "contacts", Component: Contacts },
       { path: "projects", Component: Projects },
     ],
+  },
+  {
+    path: "admin",
+    Component: Admin,
+    children: [{ index: true, Component: Dashboard }],
   },
 ]);
 
