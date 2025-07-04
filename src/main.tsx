@@ -1,5 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import { GAinit } from "./lib/ga.ts";
 import { createHashRouter, RouterProvider } from "react-router";
 import App from "./App.tsx";
 import Home from "./pages/home.tsx";
@@ -10,10 +11,6 @@ import Projects from "./pages/projects.tsx";
 import Admin from "./pages/admin/admin.tsx";
 import Dashboard from "./pages/admin/dashboard.tsx";
 import "./index.css";
-
-import ga4 from "react-ga4";
-import { DevEnvironment } from "vite";
-import { GAinit } from "./lib/ga.ts";
 
 const router = createHashRouter([
   {
@@ -34,7 +31,7 @@ const router = createHashRouter([
   },
 ]);
 
-GAinit()
+GAinit();
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
