@@ -36,7 +36,18 @@
 - [ ] Scroll top on page change
 - [ ] Add the CV
 - [ ] social media accounts
+- [x] Add dashboard analytics page
+- [x] Add side navigation
+- [ ] Add Header
+- [ ] Add Stat Card
 - [ ] Add google analytics
-- [ ] Add dashboard analytics page
+- [ ] Add trafic card
+- [ ] Add sources card
+- [ ] Add messages card
+- [ ] Add top articles card
+
+- [ ] Create the backend server
 - [ ] Add authentication to dashboard
-- [ ]
+- [ ] Create the sign-in page
+- [ ] Create the sign-up page
+- [ ] Admin privileges!

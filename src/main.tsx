@@ -11,6 +11,10 @@ import Admin from "./pages/admin/admin.tsx";
 import Dashboard from "./pages/admin/dashboard.tsx";
 import "./index.css";
 
+import ga4 from "react-ga4";
+import { DevEnvironment } from "vite";
+import { GAinit } from "./lib/ga.ts";
+
 const router = createHashRouter([
   {
     path: "/",
@@ -29,6 +33,8 @@ const router = createHashRouter([
     children: [{ index: true, Component: Dashboard }],
   },
 ]);
+
+GAinit()
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
